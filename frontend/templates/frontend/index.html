@@ -1,0 +1,29 @@
+
+{% load static %}
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="{% static 'frontend/App.css' %}">
+    <title>Start</title>
+  </head>
+  <body background="https://i.pinimg.com/originals/ef/9e/8a/ef9e8a926ce9615486cbe0be4e4c462b.jpg">
+          <div className="container" >
+             <div className="col-lg-6 ">
+                <div className="img">
+                 <img src =" {% static 'frontend/images.png' %}"/>
+                </div>
+             </div>
+           <div className="col-lg-6 ">    
+             <div className="rightsideheadings" >Member Login</div>
+             <div id="app"></div>
+           </div> 
+       <script src="{% static 'frontend/main.js' %}"></script>
+      </div>
+
+  </body>
+</html>

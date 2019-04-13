@@ -1,0 +1,73 @@
+{% load static %}
+
+<HTML>
+<HEAD>
+<title>Teacher's Dashboard </title>
+<style>
+.container{
+  margin-top:70px;
+  font-family: Montserrat-Bold;
+  font-size: 15px;
+  line-height: 1.5;
+  color: grey;
+  text-transform: uppercase;
+
+  width: 75%;
+  height: 75%;
+  border-radius: 25px;
+  justify-content: center;
+}
+  .inputbox{
+  background: #e6e6e6;
+  width: 377px;
+  padding: 6px 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; color: grey}
+
+      .signupform{color: grey; margin-left:70px;  margin-bottom: 5px; display: inline-block;}
+      .rightsideheadings{font-weight: 600;  margin-left:70px; margin-top:70px; color: #333; font-size: 36px; font-family: inherit;}
+      .text{margin-left:70px; color: grey; font-size: 20px;}
+      .button{ width: 170px; margin-left:70px; background-color:#69a74e; color:#fff;border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; padding: 6px 10px;}
+       .leftsideheadings{ color: #0e385f; padding: 6px 10px; margin-left:130px; margin-bottom:70px; font-size: 20px; font-weight: bold; margin-top: 40px; width: 450px;}
+</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</HEAD>
+<BODY background="https://i.pinimg.com/originals/ef/9e/8a/ef9e8a926ce9615486cbe0be4e4c462b.jpg">
+
+	<div class="container" style="background-color:white" >
+	  <div class="col-lg-6 ">
+    		<div class ="leftsideheadings">
+    		<br>
+    		<img src = "{% static  'frontend/images (1).png' %}">
+  		</div>
+	 </div>
+	 <div class="col-lg-6 " >
+		<div class="rightsideheadings">Teacher's Dashboard<br></div>
+		   <form method="GET" >
+ 			<div class="signupform">
+        			<button class=" inputbox" value="Attendance" method="GET" formaction="teacher/attendance/" >Attendance</button>
+				
+   			</div>
+   			<br>
+   			<div class="signupform ">
+        			<button class=" inputbox" value="Marks" formaction="teacher/marks/" >Marks</button>
+			<br>
+   			</div>
+   			<br>
+   			<div class="signupform ">
+              <button class=" inputbox" value="Assingment" formaction="teacher/exam/" >Exam</button>
+             
+			</div>
+		  </form>
+			
+		</div>
+	</div>
+ 
+
+</BODY>
+</HTML>
